@@ -1,9 +1,9 @@
 "use client"
 import UserTracker from "@/components/user-tracker"
 
-export default function HomePage() {
+export default function TrackPage() {
   return (
-    <main className="p-4">
+    <main className="min-h-[70vh] p-4">
       <UserTracker />
     </main>
   )

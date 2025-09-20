@@ -102,7 +102,3 @@ export function firebaseReady() {
 }
 
 // Export a client-safe Firebase app instance so other modules can import { app }
-export const app = typeof window !== "undefined" ? getFirebaseApp() : null
-
-// Export a client-safe Firebase database instance so other modules can import { db } directly
-export const db = typeof window !== "undefined" ? getFirebaseDb() : null

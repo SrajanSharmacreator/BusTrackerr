@@ -17,6 +17,7 @@ export default function DriverLocation({ defaultBusId }: DriverLocationProps) {
   const [permissionState, setPermissionState] = useState<"prompt" | "granted" | "denied" | "unknown">("unknown")
   const watchIdRef = useRef<number | null>(null)
   const lastSentRef = useRef<{ t: number; lat?: number; lon?: number }>({ t: 0 })
+"use client"
   const driverIdRef = useRef<string | null>(null)
 
   useEffect(() => {

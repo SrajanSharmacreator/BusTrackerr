@@ -17,6 +17,7 @@ export function NetworkStatus() {
 
     // Monitor network changes
     const cleanupNetworkMonitor = createNetworkMonitor(setNetworkInfo)
+"use client"
 
     // Monitor online/offline status
     const handleOnline = () => setIsOnline(true)

@@ -277,6 +277,7 @@ export function LiveMap({
     const avgLon = allPoints.reduce((sum, point) => sum + point.lon, 0) / allPoints.length
 
     setMapCenter({ lat: avgLat, lon: avgLon })
+"use client"
     setZoom(12)
   }, [buses, userLocation])
 

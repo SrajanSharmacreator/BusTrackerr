@@ -1,3 +1,4 @@
+"use client"
 import UserTracker from "@/components/user-tracker"
 
 export const metadata = {
